@@ -9,7 +9,7 @@ User @faceyspacey wrote a function that he called `makeAsync`. I've changed the 
 
 ### Install
 
-`meteor add hpp:makeSync`
+`meteor add hpp:makesync`
 
 ### How it Works
 
