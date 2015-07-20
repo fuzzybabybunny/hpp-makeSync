@@ -1,6 +1,6 @@
 Package.describe({
   name: 'hpp:makesync',
-  version: '0.0.1',
+  version: '1.0.0',
   // Brief, one-line summary of the package.
   summary: "Like Meteor's .wrapAsync() but with actual error objects.",
   // URL to the Git repository containing the source code for this package.
@@ -11,13 +11,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.0');
+  api.versionsFrom('METEOR@0.9.0');
   api.addFiles('makesync.js', 'server');
   api.export('makeSync', 'server');
-});
-
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('hpp:makesync');
-  api.addFiles('makesync-tests.js');
 });

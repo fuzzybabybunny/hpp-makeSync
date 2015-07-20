@@ -60,7 +60,7 @@ Meteor.methods({
       return result.data;
     } else {
       // handle the particular error
-      throw new Meteor.Error(result.error);
+      throw new Meteor.Error(//error arguments, possible derived from result.error);
     };
 
   },
