@@ -13,7 +13,7 @@ User @faceyspacey wrote a function that he called `makeAsync`. I've changed the 
 
 ### How it Works
 
-`makeSync` does the same thing as Meteor's `wrapAsync`, only it returns the following object:
+`Meteor.makeSync()` does the same thing as Meteor's `Meteor.wrapAsync()`, only it returns the following object:
 
 ```javascript
 {error: error, data: data}
